@@ -5,8 +5,10 @@
     <fileDesc>
       <titleStmt>
         <title>Iliad</title>
-        <editor>YOUR NAME HERE</editor>
-        <editor>SECOND EDITOR's NAME HERE</editor>
+        <editor>Maia Lee-Chin</editor>
+        <editor>Sophia Sarro</editor>
+        <editor>Smarika Suwal</editor>
+        <editor>Libby Hodgman</editor>
       </titleStmt>
       <publicationStmt>
         <p>Unpublished edition of the Escorial manuscript Upsilon 1.1 for the Homer Multitext project</p>
@@ -18,8 +20,74 @@
   </teiHeader>
   <text>
     <body>
-      <div n="24">
-        <l n="1">λῦτο δ᾽ ἀγών, λαοὶ δὲ θοὰς ἐπὶ νῆας ἕκαστοι</l>
+      <div n="9">
+        <l n="1">ὣς οἱ μὲν <rs type= "ethnic" n="urn:cite2:hmt:place.v1:place6">Τρῶες</rs> φυλακὰς ἔχον- αὐτὰρ <rs type= "ethnic" n="urn:cite2:hmt:place.v1:place96">Ἀχαιοὺς</rs></l>
+<l n= "2">θεσπεσίη ἔχε φύζα φόβου κρυόεντος ἑταίρη-</l>
+<l n="3">πένθεϊ δ᾽ ἀτλήτωι βεβολήατο πάντες ἄριστοι-</l>
+<l n="4">ὡς δ᾽ ἄνεμοι δύο πόντον ὀρίνετον ἰχθυόεντα</l>
+<l n="5"><persName n="urn:cite2:hmt:pers.v1:pers599">Βορέης</persName> καὶ <persName n="urn:cite2:hmt:pers.v1:pers320">Ζέφυρου</persName>, τώ τε <rs type="ethnic" n="urn:cite2:hmt:place.v1:place70">Θρήκηθεν</rs> ἄητον</l>
+<l n="6">ἐλθόντ᾽ ἐξαπίνης- ἄμυδις δέ τε κῦμα κελαινὸν</l>
+<l n="7">κορθύεται- πολλὸν δὲ παρὲξ ἅλα φῦκος ἔχευαν,</l>
+<l n="8">ὣς ἐδαΐζετο θυμὸς ἐνὶ στήθεσσιν <rs type="ethnic" n="urn:cite2:hmt:place.v1:place96">Ἀχαιῶν</rs>.
+<l n="9"><persName n="urn:cite2:hmt:pers.v1:pers22">Ἀτρείδης</persName>δ᾽ ἄχεϊ μεγάλωι βεβολημένος ἦτορ
+<l n="10">φοίτα κηρύκεσσι λιγυφθόγγοισι κελεύων</l>
+<l n="11">κλήδην εἰς ἀγορὴν κικλήσκειν ἄνδρα ἕκαστον</l>
+<l n="12">μὴ δὲ βοᾶν- αὐτὸς δὲ μετὰ πρώτοισι πονεῖτο-</l>
+<l n="13">ἷζον δ᾽εἰν ἀγορῆι τετιηότες- ἂν δ᾽<persName n="urn:cite2:hmt:pers.v1:pers22">Ἀγαμέμνων</persName>
+<l n="14">ἵστατο δακρύ χέων ὥς τε κρήνη μελάνυδρος-</l>
+<l n="15">ἥ τε κατ᾽ αἰγίλιπος πέτρης δνοφερὸν χέει ὕδωρ-</l>
+<l n="16">ὣς ὃ βαρὺ στενάχων, ἔπε᾽ <rs type= "ethnic" n="urn:cite2:hmt:place.v1:place114">Ἀργείοισι</rs> μετηύδα-</l>
+<l n="17">ὦ φίλοι- <rs type= "ethnic" n="urn:cite2:hmt:place.v1:place114">Ἀργείων</rs> ἡγήτορες ἠδὲ μέδοντες-</l>
+<l n="18"><persName n="urn:cite2:hmt:pers.v1:pers8">Ζεύς</persName> με μέγα <persName n="urn:cite2:hmt:pers.v1:pers8">Κρονίδης</persName> ἄτηι ἐνέδησε βαρείηι-</l>
+<l n="19">σχέτλιος- ὃς πρὶν μέν μοι ὑπέσχετο καὶ κατένευσεν</l>
+<l n="20"><rs type="ethnic" n="urn:cite2:hmt:place.v1:place6">Ἴλιον</rs> ἐκπέρσαντ᾽ εὐτείχεον ἀπονέεσθαι-</l>
+      </div>
+    </body>
+  </text>
+</TEI>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Iliad</title>
+        <editor>Maia Lee-Chin</editor>
+        <editor>Sophia Sarro</editor>
+        <editor>Smarika Suwal</editor>
+        <editor>Libby Hodgman</editor>
+      </titleStmt>
+      <publicationStmt>
+        <p>Unpublished edition of the Escorial manuscript Upsilon 1.1 for the Homer Multitext project</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Edited directly from photography of the manuscript</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div n="9">
+        <l n="1">ὣς οἱ μὲν <rs type= "ethnic" n="urn:cite2:hmt:place.v1:place6">Τρῶες</rs> φυλακὰς ἔχον- αὐτὰρ <rs type= "ethnic" n="urn:cite2:hmt:place.v1:place96">Ἀχαιοὺς</rs></l>
+<l n= "2">θεσπεσίη ἔχε φύζα φόβου κρυόεντος ἑταίρη-</l>
+<l n="3">πένθεϊ δ᾽ ἀτλήτωι βεβολήατο πάντες ἄριστοι-</l>
+<l n="4">ὡς δ᾽ ἄνεμοι δύο πόντον ὀρίνετον ἰχθυόεντα</l>
+<l n="5"><persName n="urn:cite2:hmt:pers.v1:pers599">Βορέης</persName> καὶ <persName n="urn:cite2:hmt:pers.v1:pers320">Ζέφυρου</persName>, τώ τε <rs type="ethnic" n="urn:cite2:hmt:place.v1:place70">Θρήκηθεν</rs> ἄητον</l>
+<l n="6">ἐλθόντ᾽ ἐξαπίνης- ἄμυδις δέ τε κῦμα κελαινὸν</l>
+<l n="7">κορθύεται- πολλὸν δὲ παρὲξ ἅλα φῦκος ἔχευαν,</l>
+<l n="8">ὣς ἐδαΐζετο θυμὸς ἐνὶ στήθεσσιν <rs type="ethnic" n="urn:cite2:hmt:place.v1:place96">Ἀχαιῶν</rs>.
+<l n="9"><persName n="urn:cite2:hmt:pers.v1:pers22">Ἀτρείδης</persName>δ᾽ ἄχεϊ μεγάλωι βεβολημένος ἦτορ
+<l n="10">φοίτα κηρύκεσσι λιγυφθόγγοισι κελεύων</l>
+<l n="11">κλήδην εἰς ἀγορὴν κικλήσκειν ἄνδρα ἕκαστον</l>
+<l n="12">μὴ δὲ βοᾶν- αὐτὸς δὲ μετὰ πρώτοισι πονεῖτο-</l>
+<l n="13">ἷζον δ᾽εἰν ἀγορῆι τετιηότες- ἂν δ᾽<persName n="urn:cite2:hmt:pers.v1:pers22">Ἀγαμέμνων</persName>
+<l n="14">ἵστατο δακρύ χέων ὥς τε κρήνη μελάνυδρος-</l>
+<l n="15">ἥ τε κατ᾽ αἰγίλιπος πέτρης δνοφερὸν χέει ὕδωρ-</l>
+<l n="16">ὣς ὃ βαρὺ στενάχων, ἔπε᾽ <rs type= "ethnic" n="urn:cite2:hmt:place.v1:place114">Ἀργείοισι</rs> μετηύδα-</l>
+<l n="17">ὦ φίλοι- <rs type= "ethnic" n="urn:cite2:hmt:place.v1:place114">Ἀργείων</rs> ἡγήτορες ἠδὲ μέδοντες-</l>
+<l n="18"><persName n="urn:cite2:hmt:pers.v1:pers8">Ζεύς</persName> με μέγα <persName n="urn:cite2:hmt:pers.v1:pers8">Κρονίδης</persName> ἄτηι ἐνέδησε βαρείηι-</l>
+<l n="19">σχέτλιος- ὃς πρὶν μέν μοι ὑπέσχετο καὶ κατένευσεν</l>
+<l n="20"><rs type="ethnic" n="urn:cite2:hmt:place.v1:place6">Ἴλιον</rs> ἐκπέρσαντ᾽ εὐτείχεον ἀπονέεσθαι-</l>
       </div>
     </body>
   </text>
