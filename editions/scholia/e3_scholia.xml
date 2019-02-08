@@ -4,7 +4,8 @@
         <fileDesc>
             <titleStmt>
                 <title>Scholia to Escorial Upsilon 1.1</title>
-                <author>YOUR NAME HERE</author>
+                <author>Sophia Sarro</author>
+                <author>Maia Lee-Chin</author>
             </titleStmt>
             <publicationStmt>
                 <p>Unpublished</p>
@@ -26,8 +27,7 @@
                             <p>urn:cts:greekLit:tlg0012.tlg001.e3:9.1</p>
                         </div>
                         <div n="comment">
-                            <p>λιτὰς μὲν τὴν ῤαψῳδίαν καλοῦσιν- ἐπει δὴ δε οἱ <rs type="ethnic" n="urn:cite2:hmt:place.v1:place6">Τρῶες</rs> ἐκ παραδόξου νικῶσι βέλεσι <persName n="urn:cite2:hmt:pers.v1:pers8">Διος</persName> οὐκ οἰκείᾳ δυνάμει, παντὶ πόνῳ τὴν τυχήν φυλλάτουσι παρεμβολὴν ἐπὶ τῷ ναυστάθμῳ ποιούμενοι- τοῖς δὲ <rs type="ethnic" n="urn:cite2:hmt:place.v1:place3">ἕλλησιν</rs> ἅπαντα δυσχερῆ- πρῶτα μὲν ἐν καιῥῷ μὴ παρόντος ἀγαθοῦ συμμάχου- εἶτα καὶ μετὰ περί ναυσιν τοσοῦτον εὐτυχούντων <rs type="ethnic" n="urn:cite2:hmt:place.v1:place6">Τρώων</rs>- οἱ κεραυνοὶ τοῦ <persName n="urn:cite2:hmt:pers.v1:pers8">Δίος</persName>- μάλιστα δὲ πάντων ὁ τὴν αἰτίαν ἔχων  <persName n="urn:cite2:hmt:pers.v1:pers22“>
-                            Ἀγαμεμνων</persName>
+                            <p>λιτὰς μὲν τὴν ῤαψῳδίαν καλοῦσιν- ἐπει δὴ δε οἱ <rs type="ethnic" n="urn:cite2:hmt:place.v1:place6">Τρῶες</rs> ἐκ παραδόξου νικῶσι βέλεσι <persName n="urn:cite2:hmt:pers.v1:pers8">Διος</persName> οὐκ οἰκείᾳ δυνάμει, παντὶ πόνῳ τὴν τυχήν φυλλάτουσι παρεμβολὴν ἐπὶ τῷ ναυστάθμῳ ποιούμενοι- τοῖς δὲ <rs type="ethnic" n="urn:cite2:hmt:place.v1:place3">ἕλλησιν</rs> ἅπαντα δυσχερῆ- πρῶτα μὲν ἐν καιῥῷ μὴ παρόντος ἀγαθοῦ συμμάχου- εἶτα καὶ μετὰ περί ναυσιν τοσοῦτον εὐτυχούντων <rs type="ethnic" n="urn:cite2:hmt:place.v1:place6">Τρώων</rs>- οἱ κεραυνοὶ τοῦ <persName n="urn:cite2:hmt:pers.v1:pers8">Δίος</persName>- μάλιστα δὲ πάντων ὁ τὴν αἰτίαν ἔχων <persName n="urn:cite2:hmt:pers.v1.pers22">Ἀγαμέμνων</persName>
                              ἄχθεται- ὅτ‘ ἂν δὲ ἄλλων πραγμάτων ἄρχεσθαι μέλλῃ̣, ὡς οἱ νόμιμοι τῶν ἱστοριογράφων- παραγραφὸς ἐμβάλλει- μεταβαίνων γὰρ ἐπὶ τὰ <rs type="ethnic" n="urn:cite2:hmt:place.v1:place3">ἑλλήνων</rs>. ἀπεκορύφωσε τὸν λογὸν</p>
                         </div>
                     </div>
@@ -55,7 +55,19 @@
                             <p>ἡ βουλήσει θέων προγεγενημενη- φύζα δὲ - ἀεὶ μὲν ἡ μετὰ δέους φυγὴ- ὅθεν καὶ <cit><ref type="urn">urn:cite2:greekLit:tlg0012.tlg001:13.81</ref><q>φυζακινῇς ἐλάφοισι</q></cit>- νῦν δὲ ἔκπληξ?- ἀπολογεῖται δὲ ὅτι ἐκ θεῶν. κρύοεις δὲ- ὁ <q>ψυχρός</q>- τὸ γὰρ θερμὸν ἐπιλείπει τοὺς δεδιότας-</p>
                         </div>
                     </div>
+                    <div n="e3_109v_4" type="scholion">
+                        <div n="lemma">
+                            <p></p>
+                        </div>
+                        <div n="ref">
+                            <p>urn:cts:greekLit:tlg0012.tlg001.e3:9.3</p>
+                        </div>
+                        <div n="comment">
+                            <p>ὁι μὲν ἄλλοι ενφυγῆι. ὁι δὲ ἄριστοι ἐν πένθει- ἀναξιον γαρ ἑλληνικων ἀρχόν τῶν ἡ φυγή- μάλιστα δὲ ἀυτῶν ἅπτονται αἱ συμφοραί - καὶ γὰρ τὰς τῶν κατορθωμάτων αἰτίας ἐπὶ τούτους ἀνάγομεν - τὸ μὲν οὗν βεβολήατο ἐπὶ ψυχῆς - τὸδε βεβλήατο ἐπὶ σώματοσ
 
+                </p>
+                        </div>
+                    </div>
                 </body>
             </text>
         </group>
