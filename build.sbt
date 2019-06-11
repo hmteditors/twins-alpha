@@ -16,5 +16,5 @@ libraryDependencies ++= Seq(
   "edu.holycross.shot" %% "greek" % "2.4.0",
   "edu.holycross.shot" %% "kanones" % "1.0.0",
 
-  "edu.holycross.shot" %% "midvalidator" % "6.0.2"
+  "edu.holycross.shot" %% "midvalidator" % "6.2.2"
 )

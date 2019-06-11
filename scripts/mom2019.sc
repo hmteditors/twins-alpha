@@ -11,13 +11,9 @@ val readerMap =   Map(
   "DiplomaticReader" ->   Vector(DiplomaticReader)
 )
 
-
-
 val orthoMap = Map(
   "LiteraryGreekString" -> LiteraryGreekString
 )
-
-
 
 def readersForString(readerName: String): Vector[MidMarkupReader] = {
   if (readerMap.keySet.contains(readerName)){
