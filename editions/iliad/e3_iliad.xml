@@ -20,6 +20,7 @@
   </teiHeader>
   <text>
     <body>
+
       <div n="9">
 <l n="1">ὣς οἱ μὲν <rs type= "ethnic" n="urn:cite2:hmt:place.v1:place6">Τρῶες</rs> φυλακὰς ἔχον~ αὐτὰρ <rs type= "ethnic" n="urn:cite2:hmt:place.v1:place96">Ἀχαιοὺς</rs></l>
 <l n= "2">θεσπεσίη ἔχε φύζα φόβου κρυόεντος ἑταίρη~</l>
@@ -28,7 +29,7 @@
 <l n="5"><persName n="urn:cite2:hmt:pers.v1:pers599">Βορέης</persName> καὶ <persName n="urn:cite2:hmt:pers.v1:pers320">Ζέφυρου</persName>, τώ τε <rs type="ethnic" n="urn:cite2:hmt:place.v1:place70">Θρήκηθεν</rs> ἄητον</l>
 <l n="6">ἐλθόντ᾽ ἐξαπίνης~ ἄμυδις δέ τε κῦμα κελαινὸν</l>
 <l n="7">κορθύεται~ πολλὸν δὲ παρὲξ ἅλα φῦκος ἔχευαν,</l>
-<l n="8">ὣς ἐδαΐζετο θυμὸς ἐνὶ στήθεσσιν <rs type="ethnic" n="urn:cite2:hmt:place.v1:place96">Ἀχαιῶν</rs></l>.
+<l n="8">ὣς ἐδαΐζετο θυμὸς ἐνὶ στήθεσσιν <rs type="ethnic" n="urn:cite2:hmt:place.v1:place96">Ἀχαιῶν</rs>.</l>
 <l n="9"><persName n="urn:cite2:hmt:pers.v1:pers22">Ἀτρείδης</persName>δ᾽ ἄχεϊ μεγάλωι βεβολημένος ἦτορ</l>
 <l n="10">φοίτα κηρύκεσσι λιγυφθόγγοισι κελεύων</l>
 <l n="11">κλήδην εἰς ἀγορὴν κικλήσκειν ἄνδρα ἕκαστον</l>
