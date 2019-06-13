@@ -604,18 +604,117 @@
                   </div>
                 </div>
                 <div n="e3_111r_1" type="scholion">
-                  <div n="lemma">
-                    <p>
-                      <num value="15">ιε</num>
-                    </p>
-                  </div>
-                  <div n="ref">
-                    <p>urn:cts:greekLit:tlg0012.tlg001.e3:9.57</p>
-                  </div>
-                  <div n="comment">
-                    <p>τῷ τὴς συγγενείας ὀνόματι τὴν ἐξ αὐτοῦ ἐπισπᾶται εὔνοιαν~ ὅρα δὲ ὁποσοι οἱ ἔπαινοι~ σχεδὸν γὰρ αὐτῳ ἀπένειμε τὸ πᾶν τῆς συμβουλῆς⁑</p>
-                  </div>
-                </div>
+                 <div n="lemma">
+                   <p>
+                     <num value="15">ιε</num>
+                   </p>
+                 </div>
+                 <div n="ref">
+                   <p>urn:cts:greekLit:tlg0012.tlg001.e3:9.70</p>
+                 </div>
+                 <div n="comment">
+                   <p>ἔθος μὲν ἦν~ ἀλλ' οἴεται αὐτὸν τῇ ἐκπλήξει παραλείψειν τὸ ἔθος~ ἀρίστος δὲ ὁ καιρὸς ἐπὶ ὀλίγων. ἔνθα τὸν ἔλεγχον προσδέξεται~ νῦν γὰρ πάντες οἱ
+                     τῶν <rs type="ethnic" n="urn:cite2:hmt:place.v1:place114">Ἀργείων</rs> ἡγήτορες καὶ μέδοντες. εἰσὶ συνειλεγμένοι~ ἐπὶ δὲ τὸ δεῖπνον. οἱ γέροντες μόνοι συνάγονται~ ἐφ' ὧν ἠνεγνκεν ἂν
+                     τὴν τοῦ γέροντος παρρησίαν~ καὶ ἄλλως~ ἐν οἰνῳ ῥάους ἑαυτῶν ἐσμέν~ ἥ τε ὁμοτράπεξοσ κοινωνία, πάντας φίλους ποιεῖ~ διὸ καὶ <rs type="ethnic" n="urn:cite2:hmt:place.v1:place111">Περσαι</rs>
+                     μεθύοντες συμβουλεύονται.νήφοντες δ' ἐπικρίνουσι~ καὶ τὸ μὲν πλῆθος ἀπαλλάσσει~ χρηστὰς ὑπογράψας ἐλπίδας περὶ τῶν λιτῶν, οὐ μὴν ἀναγκάσας ἐπ' αὐτῶν τὸν <choice><abbr>βασιλέ</abbr><expan>βασιλέα</expan></choice>
+                     περὶ τῶν δώρων ἐκφωνῆσαι~ πίεξοντος γὰρ ἦν τὸν καιρόν~ καὶ ὁ <rs type="ethnic" n="urn:cite2:hmt:place.v1:place26">Ῥοδίων</rs> δὲ νόμος, ταῖς μεγίσταις ἀρχαῖς κελεύει συσσιτεῖσθαι τοὺς
+                     ἀρίστους~ περὶ τῶν ἕωθεν πρακτέων βουλευομενους⁑</p>
+                 </div>
+               </div>
+               <div n="e3_111r_2" type="scholion">
+                 <div n="lemma">
+                   <p>
+                     <num value="16">ιϝ</num>
+                   </p>
+                 </div>
+                 <div n="ref">
+                   <p>urn:cts:greekLit:tlg0012.tlg001.e3:9.73</p>
+                 </div>
+                 <div n="comment">
+                   <p>ἡ πρὸς ὑποδοχὴν χορηγία~ τινὲς δὲ οὕτως~ ὅτι καὶ πάντας ἢν θέλης εὐχερῶς ὑποδέξῃ~ ἐπαίρει δὲ αὐτὸν διὰ τοῦ <cit>
+                     <ref type="urn">urn:cts:greekLit:tlg0012.tlg001:9.73</ref><q>πολέεσσι δ' ἀνάσσεις</q></cit>, εἰς τὸ μετὰ ταῦτα σχήσων ὑπήκοον⁑</p>
+                 </div>
+               </div>
+               <div n="e3_111r_3" type="scholion">
+                 <div n="lemma">
+                   <p>
+                     <num value="17">ιζ</num>
+                   </p>
+                 </div>
+                 <div n="ref">
+                   <p>urn:cts:greekLit:tlg0012.tlg001.e3:9.74</p>
+                 </div>
+                 <div n="comment">
+                   <p>μετρίως οὐχ' ἑαυτῷ ἀπο δίδωσι~ διδάσκει δὲ τὸν στρατηγὸν~ πολλῶν μὲν ἀκούειν. αἱρεῖσθαι δὲ τὸ κράτιστον⁑</p>
+                 </div>
+               </div>
+               <div n="e3_111r_4" type="scholion">
+                 <div n="lemma">
+                   <p>
+                     <num value="18">ιη</num>
+                   </p>
+                 </div>
+                 <div n="ref">
+                   <p>urn:cts:greekLit:tlg0012.tlg001.e3:9.76</p>
+                 </div>
+                 <div n="comment">
+                   <p>πρὸς τὸ πεῖσαι <persName n="urn:cite2:hmt:pers.v1:pers1">Ἀχιλλέα</persName>~ οἶδε γὰρ αὐτοῦ τὸ φιλότιμον⁑</p>
+                 </div>
+               </div>
+               <div n="e3_111r_5" type="scholion">
+                 <div n="lemma">
+                   <p>
+                     <num value="19">ιθ</num>
+                   </p>
+                 </div>
+                 <div n="ref">
+                   <p>urn:cts:greekLit:tlg0012.tlg001.e3:9.77</p>
+                 </div>
+                 <div n="comment">
+                   <p>οὐ λείπει τὸ ὁρῶν, ἄλλ' ἐστι παλαιὰ συνήθεια ἡ ἐξ ἀντικειμένου~ οἷον~ τίς οὐκ ἂν κλαίσειε⁑</p>
+                 </div>
+               </div>
+               <div n="e3_111r_6" type="scholion">
+                 <div n="lemma">
+                   <p>
+                     <num value="20">κ</num>
+                   </p>
+                 </div>
+                 <div n="ref">
+                   <p>urn:cts:greekLit:tlg0012.tlg001.e3:9.78</p>
+                 </div>
+                 <div n="comment">
+                   <p>ἐντῶ πεῖσαι τὸν <persName n="urn:cite2:hmt:pers.v1:pers1">Ἀχιλλέα</persName> τὴν σωρίαν τίθεται~ οὐδὲν γὰρ ἕτερον πράσσειν νυκτὸς ἐδύνατο ⁑</p>
+                 </div>
+               </div>
+               <div n="e3_111r_7" type="scholion">
+                 <div n="lemma">
+                   <p>
+                     <num value="21">κα</num>
+                   </p>
+                 </div>
+                 <div n="ref">
+                   <p>urn:cts:greekLit:tlg0012.tlg001.e3:9.81</p>
+                 </div>
+                 <div n="comment">
+                   <p>εὖ τοῦ περὶ φυλακῆς ἡγησαμένου. πρῶτος ἀριθμεῖται ὁ υἱός~ καί ὅτι ὁ παρὼν καιρὸς, οὐκ εὐτελεῖς ἄνδρας ἐπέτρεπε φυλάσσειν⁑</p>
+                 </div>
+               </div>
+               <div n="e3_111r_8" type="scholion">
+                 <div n="lemma">
+                   <p>
+                     <num value="22">κβ</num>
+                   </p>
+                 </div>
+                 <div n="ref">
+                   <p>urn:cts:greekLit:tlg0012.tlg001.e3:9.88</p>
+                 </div>
+                 <div n="comment">
+                   <p>ταύτην τὴν πυρκαϊὰν. πρὸς τὸ ποιῆσαι δεῖπνον εὐτρεπίζουσιν~ ἀσφαλέστερον γὰρ ἦν αὐτοῖς. τὸ ἀπὸ σκότους ὁρᾶν τοὺς πολεμίους~ ἐπὶ μὲν
+                      οὖν τῶν κατεπτηχότων. ψιλὴ καὶ ἡ τοῦ δείπνου παρασκευὴ. καὶ ἑνικῶς πῦρ φησι~ επὶ δὲ τῶν ἐυημερούντων βαρβάρων. καὶ τὰ τῆς εὐωχίας. μετὰ
+                     πολλῆς τῆς ἐπεζερηασίας  δεδήλωται~ <cit><ref type="urn">urn:cts:greekLit:tlg0012.tlg001:8.545</ref><q>ἐκ πόλιος δ'ἄζαντο βόας</q></cit>~ καὶ τὰ τῆς φυλακῆς λαμπρότερα⁑</p>
+                 </div>
+               </div>
               </body>
             </text>
           </group>
