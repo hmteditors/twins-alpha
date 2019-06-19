@@ -1103,6 +1103,161 @@
                                     <p>οὐχ' ὡς αἰχμάλωτον συγκταλέγει, ἀλλ' ὡς ἐν κάλλει πρεσβεύουσαν⁑</p>
                                   </div>
                                 </div>
+                                <div n="e3_112v_1" type="scholion">
+                                  <div n="lemma">
+                                    <p>
+                                      <num value="1">α</num>
+                                    </p>
+                                  </div>
+                                  <div n="ref">
+                                    <p>urn:cts:greekLit:tlg0012.tlg001.e3:9.141</p>
+                                  </div>
+                                  <div n="comment">
+                                    <p>τῆς γῆς τὸ τροφιμώτερον⁑</p>
+                                  </div>
+                                </div>
+                                <div n="e3_112v_2" type="scholion">
+                                  <div n="lemma">
+                                    <p>
+                                      <num value="2">β</num>
+                                    </p>
+                                  </div>
+                                  <div n="ref">
+                                    <p>urn:cts:greekLit:tlg0012.tlg001.e3:9.143</p>
+                                  </div>
+                                  <div n="comment">
+                                    <p>μονογενὴς. μεθ' ὃν οὐ παιδοποιεῖ τίς~ τινὲς δὲ λείπειν φασι τὸ <rs type="waw">ὡς</rs>⁑</p>
+                                  </div>
+                                </div>
+                                <div n="e3_112v_3" type="scholion">
+                                  <div n="lemma">
+                                    <p>
+                                      <num value="3">γ</num>
+                                    </p>
+                                  </div>
+                                  <div n="ref">
+                                    <p>urn:cts:greekLit:tlg0012.tlg001.e3:9.145</p>
+                                  </div>
+                                  <div n="comment">
+                                    <p>οἰκεῖα θυγατράσι βασιλέως τὰ ὀνόματα~ τρία γὰρ εἰσὶν ἃ συνέχει τὴν ἀρχήν~ νόμος ὀρθός~ ἔπειτα κρίσις καὶ ἰσχύς⁑</p>
+                                  </div>
+                                </div>
+                                <div n="e3_112v_4" type="scholion">
+                                  <div n="lemma">
+                                    <p>
+                                      <num value="4">δ</num>
+                                    </p>
+                                  </div>
+                                  <div n="ref">
+                                    <p>urn:cts:greekLit:tlg0012.tlg001.e3:9.146</p>
+                                  </div>
+                                  <div n="comment">
+                                    <p>διὰ τῆς ἐπιγαμίας πιστοῦται τὴν φιλίαν~ ὅπως μὴ δοκῇ πρὸς τὴν χρείαν κολακεύειν⁑</p>
+                                  </div>
+                                </div>
+                                <div n="e3_112v_5" type="scholion">
+                                  <div n="lemma">
+                                    <p>
+                                      <num value="5">ε</num>
+                                    </p>
+                                  </div>
+                                  <div n="ref">
+                                    <p>urn:cts:greekLit:tlg0012.tlg001.e3:9.149</p>
+                                  </div>
+                                  <div n="comment">
+                                    <p>ἄδηλον εἴτε φερνὴν ἐπὶ τῇ θυγατρὶ καὶ ταύτας δίδωσιν. εἴτε ἐκτὸς ὡς καὶ τὰ ἄλλα δῶρα~ ἄμεινον δὲ ἀντὶ φερνῆς αὐτὰς ἡ γεῖσθαι⁑</p>
+                                  </div>
+                                </div>
+                                <div n="e3_112v_6" type="scholion">
+                                  <div n="lemma">
+                                    <p>
+                                      <num value="6">ϝ</num>
+                                    </p>
+                                  </div>
+                                  <div n="ref">
+                                    <p>urn:cts:greekLit:tlg0012.tlg001.e3:9.150</p>
+                                  </div>
+                                  <div n="comment">
+                                    <p>Μεσσηνίδες αὗται πόλεις~ ἡ δὲ Μεσσήνη εἰς τὸν τῶν <rs type="ethnic" n="urn:cite2:hmt:place.v1:place27">Λακεδαιμονίων</rs>
+                                    νόμον πάλαι συνετέλει~ πῶς οὖν φησιν <persName n="urn:cite2:hmt:place.v1:place22">Ἀγαμέμνων</persName> ταύτας δίδωσιν οὐκ οὔσας
+                                    αὐτοῦ~ φασι δὲ αὐτὰς <persName n="urn:cite2:hmt:place.v1:place29">Κλυταιμνήστρας</persName> εἶναι~ ἢ ὅτι κοινὰ ἡγεῖται τὰ τοῦ ἀδελφοῦ.
+                                    ὡς κακεῖνος τὴν Αἴθην~ μεγάλη δὲ ἡ δόξα <persName n="urn:cite2:hmt:place.v1:place1">Ἀχιλλεῖ</persName>~ ὅτ' ἂν καὶ τῶν πόρρω χωρίων ἄρχῃ~ διὰ δὲ τῶν ἐπιθέτων σεμνοποιῶν. μικροῦ δεῖν
+                                    τῆς <persName n="urn:cite2:hmt:place.v1:place184">Πηλέως</persName> ἀρχῆς μείζους φησι αὐτάς~ διάφοροι μὲν γάρ εἰσι τοῖς καρποῖς~
+                                    ποικίλαι ταῖς φύσεσι τῶν ζώων~ διαφερόντως δὲ ταῖς κατοικίαις φιλάνθρωποι, ταῖς δὲ ἀγωγαῖς εὐνομώταται⁑</p>
+                                  </div>
+                                </div>
+                                <div n="e3_112v_7" type="scholion">
+                                  <div n="lemma">
+                                    <p>
+                                      <num value="7">ζ</num>
+                                    </p>
+                                  </div>
+                                  <div n="ref">
+                                    <p>urn:cts:greekLit:tlg0012.tlg001.e3:9.153</p>
+                                  </div>
+                                  <div n="comment">
+                                    <p>ὁμοίως τὸ κέαται~ σημαί μειδὲ τὸ οἰκοῦνται~ ἀπὸ τοῦ νῶ τοῦ δηλοῦντος τὸ οἰκῶ~ οὕ παράγωγον νέω~ καὶ πλεονασμῶ νεάω~ παράλιοι δέ εἰσιν~
+                                      ἵνα καὶ τῶν ἐκθαλάσσης ἀγαθῶν ἀπολαύωσι. παρακείμεναι αὐτῇ⁑</p>
+                                  </div>
+                                </div>
+                                <div n="e3_112v_8" type="scholion">
+                                  <div n="lemma">
+                                    <p>
+                                      <num value="8">η</num>
+                                    </p>
+                                  </div>
+                                  <div n="ref">
+                                    <p>urn:cts:greekLit:tlg0012.tlg001.e3:9.155</p>
+                                  </div>
+                                  <div n="comment">
+                                    <p>ὡς θεῷ φησι προσάγοντες τὰς ἀπαρχὰς τῶν ὄντων⁑</p>
+                                  </div>
+                                </div>
+                                <div n="e3_112v_9" type="scholion">
+                                  <div n="lemma">
+                                    <p>
+                                      <num value="9">θ</num>
+                                    </p>
+                                  </div>
+                                  <div n="ref">
+                                    <p>urn:cts:greekLit:tlg0012.tlg001.e3:9.156</p>
+                                  </div>
+                                  <div n="comment">
+                                    <p>οὐ στασιαζόντων φησι ἄρξει ἀνδρῶν~ ἀλλὰ πειθαρχούντων καὶ τῷ σκηπτρῳ ὑπεικόντων~ τελέουσι δὲ. ἀντὶ τοῦ  ἀεὶ τελοῖεν~ λιπαρὰς δὲ τὰς
+                                      θέμιστας καλῶν. τοῦτο δηλοῖ, ὅτι τὸ κρίνειν καλῶς εὐδαιμονίαν ἄγει⁑</p>
+                                  </div>
+                                </div>
+                                <div n="e3_112v_10" type="scholion">
+                                  <div n="lemma">
+                                    <p>
+                                      <num value="10">ι</num>
+                                    </p>
+                                  </div>
+                                  <div n="ref">
+                                    <p>urn:cts:greekLit:tlg0012.tlg001.e3:9.158</p>
+                                  </div>
+                                  <div n="comment">
+                                    <p>δια τί οἱ μὲν ἄλλοι θεοὶ στρεπτοὶ λέγονται. τὸν δὲ <persName n="urn:cite2:hmt:place.v1:place201">Ἅδην</persName> ἀνελεήμονα φασι~
+                                    ὅτι ἐκεῖνοι μὲν περὶ τῶν εἰς ἑαυτοὺς χαλεπαίνουσιν ἁμαρτημάτων~ διὸ καὶ συγγινώσκουσιν~ ὁ δὲ καὶ περὶ τῶν ἰδίων καὶ ἀλλοτρίων~ διὸ
+                                    ἀνηλεής ἐστιν~ ὅθεν ἐν οὐ δὲ μιᾷ πόλει <persName n="urn:cite2:hmt:place.v1:place201">Αἵδου</persName> βωμός ἐστιν~ <q>μόνος γὰρ θεῶν θάνατος
+                                    οὐ δώρων ἐρᾷ. οὐδ' ἐπιθυμεῖ σπονδῶν</q>~ ἀναγκαῖον δὲ τὸ μετὰ τὰ δῶρα τὴν παράκλησιν ἐπαγαγεὶν, διὰ τὸ ὑπεκκλίνειν τὸ ἀλαζονικόν~
+                                    ἀμείλιχος δὲ ὁ ἀγοήτευτος καὶ ἀδάμαστος~ δύο γάρ εἰσιν οἷς πείθομεν~ λόγῳ καὶ βίᾳ~ διὰ δὲ τοῦ <persName n="urn:cite2:hmt:place.v1:place201">Αἵδου</persName>
+                                    ἐδήλωσεν~ ὡς ἐὰν ἔστιν ἀμείλιχος, βδελυρὸς τοῖς πᾶσιν ἔσται⁑</p>
+                                  </div>
+                                </div>
+                                <div n="e3_112v_11" type="scholion">
+                                  <div n="lemma">
+                                    <p>
+                                      <num value="11">ια</num>
+                                    </p>
+                                  </div>
+                                  <div n="ref">
+                                    <p>urn:cts:greekLit:tlg0012.tlg001.e3:9.162</p>
+                                  </div>
+                                  <div n="comment">
+                                    <p>ὡσανεὶ δέησιν προσάγει τὴν ἡλικίαν καὶ τὸ σκῆπτρον~ οἷς εἴκουσι καὶ μεγαλόφρονες~ ἐξέφυγε δὲ τὸ ἐλεεινὸν, εἴκειν αὐτὸν ἀπαιτῶν τοῖς μείζοσιν ἀξιώμασιν⁑</p>
+                                  </div>
+                                </div>
                               </body>
                             </text>
                           </group>
