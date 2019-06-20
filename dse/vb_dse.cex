@@ -95,7 +95,7 @@ urn:cts:greekLit:tlg0012.tlg001.msB:9.88#urn:cite2:hmt:vbbifolio.v1:vb_115v_116r
 urn:cts:greekLit:tlg0012.tlg001.msB:9.89#urn:cite2:hmt:vbbifolio.v1:vb_115v_116r@0.4934,0.6034,0.2419,0.02640#urn:cite2:hmt:msB.v1:116r
 urn:cts:greekLit:tlg0012.tlg001.msB:9.90#urn:cite2:hmt:vbbifolio.v1:vb_115v_116r@0.4989,0.6215,0.2469,0.02670#urn:cite2:hmt:msB.v1:116r
 urn:cts:greekLit:tlg0012.tlg001.msB:9.91#urn:cite2:hmt:vbbifolio.v1:vb_115v_116r@0.5024,0.6416,0.2318,0.02848#urn:cite2:hmt:msB.v1:116r
-urn:cts:greekLit:tlg0012.tlg001.msB:9.92#urn:cite2:hmt:vbbifolio.v1:vb_115v_116r@0.5026,0.6627,0.2325,0.02877#urn:cite2:hmt:msB.v1:116r
+urn:cts:greekLit:tlg0012.tlg001.msB:9.92#urn:cite2:hmt:vbbifolio.v1:vb_115v_116r@0.0012,0.6627,0.2325,0.02877#urn:cite2:hmt:msB.v1:116r
 
 urn:cts:greekLit:tlg0012.tlg001.msB:9.93#urn:cite2:hmt:vbbifolio.v1:vb_116v_117r@0.2316,0.2172,0.2135,0.02834#urn:cite2:hmt:msB.v1:116v
 urn:cts:greekLit:tlg0012.tlg001.msB:9.94#urn:cite2:hmt:vbbifolio.v1:vb_116v_117r@0.2299,0.2400,0.2095,0.02774#urn:cite2:hmt:msB.v1:116v
@@ -196,3 +196,28 @@ urn:cts:greekLit:tlg0012.tlg001.msB:9.185#urn:cite2:hmt:vbbifolio.v1:vb_117v_118
 urn:cts:greekLit:tlg0012.tlg001.msB:9.186#urn:cite2:hmt:vbbifolio.v1:vb_117v_118r@0.4996,0.6148,0.2299,0.03301#urn:cite2:hmt:msB.v1:118r
 urn:cts:greekLit:tlg0012.tlg001.msB:9.187#urn:cite2:hmt:vbbifolio.v1:vb_117v_118r@0.4967,0.6387,0.2301,0.02800#urn:cite2:hmt:msB.v1:118r
 urn:cts:greekLit:tlg0012.tlg001.msB:9.188#urn:cite2:hmt:vbbifolio.v1:vb_117v_118r@0.4976,0.6581,0.2334,0.02800#urn:cite2:hmt:msB.v1:118r
+
+urn:cts:greekLit:tlg0012.tlg001.msB:9.189#urn:cite2:hmt:vbbifolio.v1:vb_118v_119r@0.2447,0.2237,0.2154,0.02853#urn:cite2:hmt:msB.v1:118v
+urn:cts:greekLit:tlg0012.tlg001.msB:9.190#urn:cite2:hmt:vbbifolio.v1:vb_118v_119r@0.2426,0.2459,0.2067,0.02767#urn:cite2:hmt:msB.v1:118v
+urn:cts:greekLit:tlg0012.tlg001.msB:9.191#urn:cite2:hmt:vbbifolio.v1:vb_118v_119r@0.2406,0.2690,0.1964,0.02682#urn:cite2:hmt:msB.v1:118v
+urn:cts:greekLit:tlg0012.tlg001.msB:9.192#urn:cite2:hmt:vbbifolio.v1:vb_118v_119r@0.2432,0.2882,0.2159,0.02796#urn:cite2:hmt:msB.v1:118v
+urn:cts:greekLit:tlg0012.tlg001.msB:9.193#urn:cite2:hmt:vbbifolio.v1:vb_118v_119r@0.2447,0.3053,0.2240,0.02853#urn:cite2:hmt:msB.v1:118v
+urn:cts:greekLit:tlg0012.tlg001.msB:9.194#urn:cite2:hmt:vbbifolio.v1:vb_118v_119r@0.2443,0.3250,0.2290,0.02796#urn:cite2:hmt:msB.v1:118v
+urn:cts:greekLit:tlg0012.tlg001.msB:9.195#urn:cite2:hmt:vbbifolio.v1:vb_118v_119r@0.2437,0.3435,0.2174,0.02454#urn:cite2:hmt:msB.v1:118v
+urn:cts:greekLit:tlg0012.tlg001.msB:9.196#urn:cite2:hmt:vbbifolio.v1:vb_118v_119r@0.2450,0.3601,0.2404,0.02539#urn:cite2:hmt:msB.v1:118v
+urn:cts:greekLit:tlg0012.tlg001.msB:9.197#urn:cite2:hmt:vbbifolio.v1:vb_118v_119r@0.2308,0.3766,0.2471,0.03081#urn:cite2:hmt:msB.v1:118v
+urn:cts:greekLit:tlg0012.tlg001.msB:9.198#urn:cite2:hmt:vbbifolio.v1:vb_118v_119r@0.2426,0.4003,0.2178,0.02397#urn:cite2:hmt:msB.v1:118v
+urn:cts:greekLit:tlg0012.tlg001.msB:9.199#urn:cite2:hmt:vbbifolio.v1:vb_118v_119r@0.2292,0.4134,0.2347,0.02853#urn:cite2:hmt:msB.v1:118v
+urn:cts:greekLit:tlg0012.tlg001.msB:9.200#urn:cite2:hmt:vbbifolio.v1:vb_118v_119r@0.2432,0.4351,0.2299,0.02511#urn:cite2:hmt:msB.v1:118v
+urn:cts:greekLit:tlg0012.tlg001.msB:9.201#urn:cite2:hmt:vbbifolio.v1:vb_118v_119r@0.2399,0.4516,0.2366,0.02539#urn:cite2:hmt:msB.v1:118v
+urn:cts:greekLit:tlg0012.tlg001.msB:9.202#urn:cite2:hmt:vbbifolio.v1:vb_118v_119r@0.2415,0.4713,0.2297,0.02254#urn:cite2:hmt:msB.v1:118v
+urn:cts:greekLit:tlg0012.tlg001.msB:9.203#urn:cite2:hmt:vbbifolio.v1:vb_118v_119r@0.2386,0.4870,0.2340,0.02311#urn:cite2:hmt:msB.v1:118v
+urn:cts:greekLit:tlg0012.tlg001.msB:9.204#urn:cite2:hmt:vbbifolio.v1:vb_118v_119r@0.2434,0.5081,0.2305,0.01997#urn:cite2:hmt:msB.v1:118v
+urn:cts:greekLit:tlg0012.tlg001.msB:9.205#urn:cite2:hmt:vbbifolio.v1:vb_118v_119r@0.2301,0.5198,0.2329,0.02710#urn:cite2:hmt:msB.v1:118v
+urn:cts:greekLit:tlg0012.tlg001.msB:9.206#urn:cite2:hmt:vbbifolio.v1:vb_118v_119r@0.2432,0.5404,0.2233,0.02568#urn:cite2:hmt:msB.v1:118v
+urn:cts:greekLit:tlg0012.tlg001.msB:9.207#urn:cite2:hmt:vbbifolio.v1:vb_118v_119r@0.2401,0.5572,0.2150,0.02710#urn:cite2:hmt:msB.v1:118v
+urn:cts:greekLit:tlg0012.tlg001.msB:9.208#urn:cite2:hmt:vbbifolio.v1:vb_118v_119r@0.2406,0.5772,0.2299,0.02625#urn:cite2:hmt:msB.v1:118v
+urn:cts:greekLit:tlg0012.tlg001.msB:9.209#urn:cite2:hmt:vbbifolio.v1:vb_118v_119r@0.2436,0.5926,0.2397,0.02767#urn:cite2:hmt:msB.v1:118v
+urn:cts:greekLit:tlg0012.tlg001.msB:9.210#urn:cite2:hmt:vbbifolio.v1:vb_118v_119r@0.2421,0.6137,0.2343,0.02568#urn:cite2:hmt:msB.v1:118v
+urn:cts:greekLit:tlg0012.tlg001.msB:9.211#urn:cite2:hmt:vbbifolio.v1:vb_118v_119r@0.2445,0.6317,0.2284,0.02539#urn:cite2:hmt:msB.v1:118v
+urn:cts:greekLit:tlg0012.tlg001.msB:9.212#urn:cite2:hmt:vbbifolio.v1:vb_118v_119r@0.2413,0.6491,0.2331,0.03281#urn:cite2:hmt:msB.v1:118v
