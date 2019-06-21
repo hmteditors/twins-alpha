@@ -1584,6 +1584,72 @@
                                     <p>τὸν τῶν πολλῶν ἐκβάλλει τῦφον, ἑαυτῷ ὑπηρετούμενος ὁ <persName n="urn:cite2:hmt:pers.v1:pers1">Ἀχιλλεύς</persName>⁑</p>
                                   </div>
                                 </div>
+                                <div n="e3_114r_13" type="scholion">
+                                  <div n="lemma">
+                                    <p>
+                                      <num value="13">ιγ</num>
+                                    </p>
+                                  </div>
+                                  <div n="ref">
+                                    <p>urn:cts:greekLit:tlg0012.tlg001.e3:9.214</p>
+                                  </div>
+                                  <div n="comment">
+                                    <p>ἢ ὅτι τὰ ἁλίπαστα διαμένει~ ἢ ὅτι τὰς φιλίας συνάγει~ κρατευτάων δὲ ἢ τῶν ἁλοθηκῶν.
+                                      ἢ τῶν ἐξοχῶν τῆς ἐσχάρας~ ἐκβάλλει δὲ ἐκ τοῦ πυρὸς~ ἵνα μὴ ἐκεῖσε πάττων ἐνοχλῇ⁑</p>
+                                  </div>
+                                </div>
+                                <div n="e3_114r_14" type="scholion">
+                                  <div n="lemma">
+                                    <p>
+                                      <num value="14">ιδ</num>
+                                    </p>
+                                  </div>
+                                  <div n="ref">
+                                    <p>urn:cts:greekLit:tlg0012.tlg001.e3:9.215</p>
+                                  </div>
+                                  <div n="comment">
+                                    <p>ἐπιμήκεσι τραπέζαις ἐξ ἑλείων ῥάβδων πεπλεγμένεις⁑</p>
+                                  </div>
+                                </div>
+                                <div n="e3_114r_15" type="scholion">
+                                  <div n="lemma">
+                                    <p>
+                                      <num value="15">ιε</num>
+                                    </p>
+                                  </div>
+                                  <div n="ref">
+                                    <p>urn:cts:greekLit:tlg0012.tlg001.e3:9.218</p>
+                                  </div>
+                                  <div n="comment">
+                                    <p>ὡς διαλεξόμενος~ οἶδε γὰρ ὅτι αὐτὸς τὴν πρεσβείαν πεπίστευται⁑</p>
+                                  </div>
+                                </div>
+                                <div n="e3_114r_16" type="scholion">
+                                  <div n="lemma">
+                                    <p>
+                                      <num value="16">ιϝ</num>
+                                    </p>
+                                  </div>
+                                  <div n="ref">
+                                    <p>urn:cts:greekLit:tlg0012.tlg001.e3:9.219</p>
+                                  </div>
+                                  <div n="comment">
+                                    <p>ἀπάρξασθαι ἢ θυμιάσαι~ ὡς τὸ <cit><ref type="urn">urn:cite2:greekLit:tlg0012.tlg002:9.231</ref><q>πῦρ δὲ κείαντες, ἐθύσαμεν</q></cit>⁑</p>
+                                  </div>
+                                </div>
+                                <div n="e3_114r_17" type="scholion">
+                                  <div n="lemma">
+                                    <p>
+                                      <num value="17">ιζ</num>
+                                    </p>
+                                  </div>
+                                  <div n="ref">
+                                    <p>urn:cts:greekLit:tlg0012.tlg001.e3:9.220</p>
+                                  </div>
+                                  <div n="comment">
+                                    <p>δεισιδαίμων~ ὃς καὶ ἐπὶ τροφῆς⁑</p>
+                                  </div>
+                                </div>
                               </body>
                             </text>
                           </group>
