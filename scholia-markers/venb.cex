@@ -1,2 +1,16 @@
 reading#image#scholion#linked text
-<num>α</num>#urn:cite2:hmt:e3bifolio.v1:E3_113v_114r@0.4031,0.2313,0.01062,0.01691#urn:cts:greekLit:tlg5026.e3.hmt:9.e3_113v_1#urn:cts:greekLit:tlg0012.tlg001.e3:9.189@κλέα
+
+<num>α</num>#urn:cite2:hmt:vbbifolio.v1:vb_119v_120r@0.2938,0.2154,0.01271,0.01736#urn:cts:greekLit:tlg5026.msB.hmt:9.msB_119v_1#urn:cts:greekLit:tlg0012.tlg001.msB:9.237@Ἕκτωρ
+<num>β</num>#urn:cite2:hmt:vbbifolio.v1:vb_119v_120r@0.4110,0.2568,0.01142,0.01912#urn:cts:greekLit:tlg5026.msB.hmt:9.msB_119v_2#urn:cts:greekLit:tlg0012.tlg001.msB:9.239@λύσσα
+<num>γ</num>#urn:cite2:hmt:vbbifolio.v1:vb_119v_120r@0.2684,0.3027,0.008843,0.01559#urn:cts:greekLit:tlg5026.msB.hmt:9.msB_119v_3#urn:cts:greekLit:tlg0012.tlg001.msB:9.241@γὰρ
+<num>δ</num>#urn:cite2:hmt:vbbifolio.v1:vb_119v_120r@0.3655,0.4125,0.007922,0.01530#urn:cts:greekLit:tlg5026.msB.hmt:9.msB_119v_4#urn:cts:greekLit:tlg0012.tlg001.msB:9.247@ὀψέ
+<num>ε</num>#urn:cite2:hmt:vbbifolio.v1:vb_119v_120r@0.4153,0.4107,0.007553,0.01530#urn:cts:greekLit:tlg5026.msB.hmt:9.msB_119v_5#urn:cts:greekLit:tlg0012.tlg001.msB:9.247@υἷας
+<num>ϝ</num>#urn:cite2:hmt:vbbifolio.v1:vb_119v_120r@0.4025,0.4490,0.009396,0.01324#urn:cts:greekLit:tlg5026.msB.hmt:9.msB_119v_6#urn:cts:greekLit:tlg0012.tlg001.msB:9.249@τι
+<num>ζ</num>#urn:cite2:hmt:vbbifolio.v1:vb_119v_120r@0.2767,0.5049,0.007369,0.01648#urn:cts:greekLit:tlg5026.msB.hmt:9.msB_119v_7#urn:cts:greekLit:tlg0012.tlg001.msB:9.252@μὲν
+<num>η</num>#urn:cite2:hmt:vbbifolio.v1:vb_119v_120r@0.3187,0.5219,0.01032,0.01471#urn:cts:greekLit:tlg5026.msB.hmt:9.msB_119v_8#urn:cts:greekLit:tlg0012.tlg001.msB:9.253@ἐκ
+<num>θ</num>#urn:cite2:hmt:vbbifolio.v1:vb_119v_120r@0.2780,0.5407,0.008475,0.01530#urn:cts:greekLit:tlg5026.msB.hmt:9.msB_119v_9#urn:cts:greekLit:tlg0012.tlg001.msB:9.254@ἐμὸν
+<num>ι</num>#urn:cite2:hmt:vbbifolio.v1:vb_119v_120r@0.2780,0.5407,0.008475,0.01530#urn:cts:greekLit:tlg5026.msB.hmt:9.msB_119v_10#urn:cts:greekLit:tlg0012.tlg001.msB:9.255@ἐθέλωσι
+<num>ια</num>#urn:cite2:hmt:vbbifolio.v1:vb_119v_120r@0.3294,0.5966,0.01161,0.01589#urn:cts:greekLit:tlg5026.msB.hmt:9.msB_119v_11#urn:cts:greekLit:tlg0012.tlg001.msB:9.257@κακομηχάνου
+<num>ιβ</num>#urn:cite2:hmt:vbbifolio.v1:vb_119v_120r@0.3130,0.6149,0.01105,0.01618#urn:cts:greekLit:tlg5026.msB.hmt:9.msB_119v_12#urn:cts:greekLit:tlg0012.tlg001.msB:9.258@ἠμὲν
+<num>ιγ</num>#urn:cite2:hmt:vbbifolio.v1:vb_119v_120r@0.3476,0.6340,0.01105,0.01648#urn:cts:greekLit:tlg5026.msB.hmt:9.msB_119v_13#urn:cts:greekLit:tlg0012.tlg001.msB:9.259@λήθεαι
+<num>ιδ</num>#urn:cite2:hmt:vbbifolio.v1:vb_119v_120r@0.4350,0.6281,0.01253,0.02030#urn:cts:greekLit:tlg5026.msB.hmt:9.msB_119v_14#urn:cts:greekLit:tlg0012.tlg001.msB:9.259@νῦν
