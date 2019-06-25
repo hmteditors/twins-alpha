@@ -8,6 +8,12 @@ import java.io.PrintWriter
 import org.homermultitext.edmodel._
 import edu.holycross.shot.greek._
 
+import better.files._
+import File._
+import java.io.{File => JFile}
+import better.files.Dsl._
+
+
 val readerMap =   Map(
   "DiplomaticReader" ->   Vector(DiplomaticReader)
 )
@@ -59,6 +65,8 @@ val reporter = ValidationReporter(midValidator)
 
 
 def twinScholia(e3String: String, msBString: String) = {
+  println("Making comparison of two pages...")
+
 
   val msBurn = Cite2Urn(msBString)
   val msBcorpus = reporter.corpusForPage(msBurn)
@@ -71,6 +79,9 @@ def twinScholia(e3String: String, msBString: String) = {
   val e3DseReporter =  DseReporter(e3urn, midValidator.dse, e3corpus, midValidator.readers)
   val msBDseReporter =  DseReporter(msBurn, midValidator.dse, reporter.corpusForPage(msBurn), midValidator.readers)
 
+  val baseDir = File("validation")
+  val fName = e3urn.objectComponent + "-" + msBurn.objectComponent + ".md"
+  val outFile = baseDir/fName
 
   val pairings=  DataCollector.compositeFiles("relations", "cex", 1).split("\n").filter(_.nonEmpty)
 
@@ -106,7 +117,8 @@ def twinScholia(e3String: String, msBString: String) = {
   }
   val hdr = "| Upsilon 1.1 | Venetus B |\n|:-----------|:-----------|\n"
   val md = hdr + rows.filter(_.nonEmpty).mkString("\n")
-  new PrintWriter("parallel-scholia.md"){write(md);close;}
+  //new PrintWriter("parallel-scholia.md"){write(md);close;}
+  outFile.overwrite(md)
 }
 
 
