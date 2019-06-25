@@ -80,7 +80,7 @@ def twinScholia(e3String: String, msBString: String) = {
   val msBDseReporter =  DseReporter(msBurn, midValidator.dse, reporter.corpusForPage(msBurn), midValidator.readers)
 
   val baseDir = File("validation")
-  val fName = e3urn.objectComponent + "-" + msBurn.objectComponent + ".md"
+  val fName = e3urn.collection + "-" + e3urn.objectComponent + "-" + msBurn.collection+ "-" + msBurn.objectComponent + ".md"
   val outFile = baseDir/fName
 
   val pairings=  DataCollector.compositeFiles("relations", "cex", 1).split("\n").filter(_.nonEmpty)
