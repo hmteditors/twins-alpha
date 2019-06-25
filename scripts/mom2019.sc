@@ -59,31 +59,53 @@ val reporter = ValidationReporter(midValidator)
 
 
 def twinScholia(e3String: String, msBString: String) = {
-  val e3urn = Cite2Urn(e3String)
-  val msBurn = Cite2Urn(msBString)
 
-  val e3DseReporter =  DseReporter(e3urn, midValidator.dse, reporter.corpusForPage(e3urn), midValidator.readers)
+  val msBurn = Cite2Urn(msBString)
+  val msBcorpus = reporter.corpusForPage(msBurn)
+  val msBurns = msBcorpus.nodes.map(_.urn)
+
+  val e3urn = Cite2Urn(e3String)
+  val e3corpus = reporter.corpusForPage(e3urn)
+  val e3urns = e3corpus.nodes.map(_.urn)
+
+  val e3DseReporter =  DseReporter(e3urn, midValidator.dse, e3corpus, midValidator.readers)
   val msBDseReporter =  DseReporter(msBurn, midValidator.dse, reporter.corpusForPage(msBurn), midValidator.readers)
 
 
   val pairings=  DataCollector.compositeFiles("relations", "cex", 1).split("\n").filter(_.nonEmpty)
+
+
+
   val rows = for (pr <- pairings) yield {
     val urns = pr.split("#").toVector
 
     val e3Str = if (urns(0).isEmpty) {
       ""
     } else {
-      e3DseReporter.passageMarkdown(CtsUrn(urns(0)))
+      val scholion = CtsUrn(urns(0))
+      if (e3urns.contains(scholion)) {
+        e3DseReporter.passageMarkdown(scholion)
+      } else { "" }
+
     }
     val msB = if (urns.size == 1) {
+
       ""
     } else {
-      msBDseReporter.passageMarkdown(CtsUrn(urns(1)))
+      val scholion = CtsUrn(urns(1))
+      if (msBurns.contains(scholion)) {
+        msBDseReporter.passageMarkdown(scholion)
+      } else { "" }
+
     }
-    "| " + e3Str + " | " + msB + " |"
+    if ((msB + e3Str).isEmpty) {
+      ""
+    } else {
+      "| " + e3Str + " | " + msB + " |"
+    }
   }
   val hdr = "| Upsilon 1.1 | Venetus B |\n|:-----------|:-----------|\n"
-  val md = hdr + rows.mkString("\n")
+  val md = hdr + rows.filter(_.nonEmpty).mkString("\n")
   new PrintWriter("parallel-scholia.md"){write(md);close;}
 }
 
