@@ -1,0 +1,3 @@
+=Text URN#Format#Document#Namespace mapping#Citation model
+urn:cts:greekLit:tlg5026.msB.hmt:#xml#vb_scholia.xml#tei->http://www.tei-c.org/ns/1.0#/tei:TEI/tei:text/tei:group[@n = '?']/tei:text/tei:body/tei:div[@n = '?']/tei:div[@n = '?']
+urn:cts:greekLit:tlg5026.e3.hmt:#xml#e3_scholia.xml#tei->http://www.tei-c.org/ns/1.0#/tei:TEI/tei:text/tei:group[@n = '?']/tei:text/tei:body/tei:div[@n = '?']/tei:div[@n = '?']

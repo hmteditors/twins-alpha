@@ -8,6 +8,8 @@ import java.io.PrintWriter
 import org.homermultitext.edmodel._
 import edu.holycross.shot.greek._
 
+import edu.holycross.shot.citebinaryimage._
+
 import better.files._
 import File._
 import java.io.{File => JFile}
@@ -61,8 +63,65 @@ def orthoMappings(csvSource : String = "editions/orthographies.csv") = {
 
 val repo = EditorsRepo(".")
 val midValidator = Validator(repo, readerMappings(), orthoMappings())
+val dse = midValidator.dse
 val reporter = ValidationReporter(midValidator)
 
+def imagePathForMSCollection(msColl: String): String = {
+  msColl match {
+    case "msA" => "/project/homer/pyramidal/deepzoom/hmt/vaimg/2017a/"
+    case "msB" => "/project/homer/pyramidal/deepzoom/hmt/vbbifolio/v1/"
+    case "e3" => "/project/homer/pyramidal/deepzoom/hmt/e3bifolio/v1/"
+  }
+}
+
+
+// Validate titles
+// validate urns in  scholia references
+
+
+
+def scholionMarkers(uString: String) = {
+  val baseUrl = "http://www.homermultitext.org/iipsrv?"
+
+  val pg = Cite2Urn(uString)
+  val txts = dse.textsForTbs(pg)
+  println("TEXTS:")
+  println(txts.mkString("\n"))
+  println("\n\n")
+  val lines = DataCollector.compositeFiles("scholia-markers", "cex", 1).split("\n").filter(_.nonEmpty).filterNot(_.contains("reading#image#scholion#"))
+
+  val mdLines = for (ln <- lines) yield {
+    //reading#image#scholion#linked text
+
+    val cols = ln.split("#")
+    val scholion = CtsUrn(cols(2))
+    println("LOOK SCHOLION " + scholion)
+
+    if (!txts.contains(scholion)) {
+      ""
+    } else {
+
+      val img = Cite2Urn(cols(1))
+      val imagePath = imagePathForMSCollection(pg.collection)
+      val bis = IIIFApi(baseUrl,imagePath)
+
+      val reading = cols(0)
+
+
+      val txt = cols(3)
+      "| " +  bis.linkedHtmlImage(img) + s" | ${reading} | ${scholion} | ${txt} |"
+    }
+  }
+
+  val hdr = "| Image | Reading | Attached to scholion | Comments on |\n|:-----------|:-----------|:-----------|:-----------|\n"
+
+  val md = hdr + mdLines.filter(_.nonEmpty).mkString("\n")
+
+  val baseDir = File(s"validation/${pg.collection}-${pg.objectComponent}")
+  val reptName = "scholion-markers.md"
+  val outFile = baseDir/reptName
+  outFile.overwrite(md)
+}
 
 // Map of scholia to Iliad lines
 def indexComments = {
@@ -85,8 +144,6 @@ def indexComments = {
     }
   }
   urnMap.flatten.toMap
-  // xreff(0).urn.collapsePassageBy(1)
-
 }
 
 // Map of Iliad lines to pages of VA MS.
@@ -100,13 +157,15 @@ def vaIliadIndex = {
 }
 
 
-//
+// Markdown linking to facsimile edition of Venetus A
 def vaPageMd(pg: Cite2Urn) : String = {
   val baseUrl = "https://homermultitext.github.io/facsimiles/venetus-a/"
   val link = s"${baseUrl}${pg.objectComponent}/"
   s"[${pg.objectComponent}](${link})"
 }
 
+
+// Markdown for cross reference in twinsScholia output to Venetus A
 def xrefMd(urns: Vector[String],
   lnsIndex : Map[CtsUrn,CtsUrn],
   pgIndex: Map[CtsUrn,Cite2Urn]) :  String = {
@@ -117,7 +176,7 @@ def xrefMd(urns: Vector[String],
         try {
           val u = CtsUrn(urns(0))
           "Commenting on *Iliad*" + lnsIndex(u).passageComponent
-          
+
         } catch {
           case t: Throwable => {
 
@@ -164,8 +223,8 @@ def twinScholia(e3String: String, msBString: String) = {
   val e3corpus = reporter.corpusForPage(e3urn)
   val e3urns = e3corpus.nodes.map(_.urn)
 
-  val e3DseReporter =  DseReporter(e3urn, midValidator.dse, e3corpus, midValidator.readers)
-  val msBDseReporter =  DseReporter(msBurn, midValidator.dse, reporter.corpusForPage(msBurn), midValidator.readers)
+  val e3DseReporter =  DseReporter(e3urn, dse, e3corpus, midValidator.readers)
+  val msBDseReporter =  DseReporter(msBurn, dse, reporter.corpusForPage(msBurn), midValidator.readers)
 
   val baseDir = File("validation")
   val fName = e3urn.collection + "-" + e3urn.objectComponent + "-" + msBurn.collection+ "-" + msBurn.objectComponent + ".md"
@@ -221,17 +280,20 @@ def twinScholia(e3String: String, msBString: String) = {
   outFile.overwrite(md)
 }
 
+
+// Map of Perosnal names URNs to string labels
 def namesAuthority :  Map[Cite2Urn, String]= {
-val lines = scala.io.Source.fromURL("https://raw.githubusercontent.com/homermultitext/hmt-authlists/master/data/hmtnames.cex").getLines.toVector.drop(2)
+  val lines = scala.io.Source.fromURL("https://raw.githubusercontent.com/homermultitext/hmt-authlists/master/data/hmtnames.cex").getLines.toVector.drop(2)
 
-val auths = for (ln <- lines) yield {
-  val cols = ln.split("#")
-  (Cite2Urn(cols(0)) -> cols(3))
+  val auths = for (ln <- lines) yield {
+    val cols = ln.split("#")
+    (Cite2Urn(cols(0)) -> cols(3))
+  }
+  auths.toMap
 }
-auths.toMap
-}
 
 
+// Map of place name URNs to string labels
 def placesAuthority :  Map[Cite2Urn, String]= {
   val lines = scala.io.Source.fromURL("https://raw.githubusercontent.com/homermultitext/hmt-authlists/master/data/hmtplaces.cex").getLines.toVector.drop(2)
 
@@ -242,11 +304,12 @@ def placesAuthority :  Map[Cite2Urn, String]= {
   auths.toMap
 }
 
+
+// Write report for named entity validation.
 def validatePNs(uString: String) = {
   val pg = Cite2Urn(uString)
 
   val corpus = reporter.corpusForPage(pg)
-  //println("SIZE OF CORPUS: " + corpus.size + " NODEs.")
   val rept = StringBuilder.newBuilder
   rept.append("# Named entity verification for people: " + pg + "\n\n")
   val allPeople = for (nd <- corpus.nodes) yield {
@@ -277,24 +340,22 @@ def validatePNs(uString: String) = {
 
   rept.append("## Verification\n\n")
   for (u <- persUrns.distinct) {
-    //println(s"${u} ${persAuth(u)}")
     rept.append(s"### ${persAuth(u)} (*${u.objectComponent}*) \n\n")
     val matches = peopleList.filter(_.lexicalDisambiguation == u)
     for (tkn <- matches) {
       rept.append("-  " + tkn.editionUrn + " " + tkn.leidenDiplomatic + "\n")
-      //println("\t" + tkn.editionUrn + " " + tkn.leidenDiplomatic)
     }
     rept.append("\n\n")
   }
 
   val baseDir = File(s"validation/${pg.collection}-${pg.objectComponent}")
-  //val fName = e3urn.collection + "-" + e3urn.objectComponent + "-" + msBurn.collection+ "-" + msBurn.objectComponent + ".md"
+
   val reptName = "personal-names.md"
   val outFile = baseDir/reptName
   outFile.overwrite(rept.toString)
 }
 
-//rept.append(s"### ${placeAuth(u)} (*${u.objectComponent}*) \n\n")
+// Write report for validation of place names.
 def validatePlaces(uString: String) = {
   val pg = Cite2Urn(uString)
   val rept = StringBuilder.newBuilder
@@ -352,7 +413,7 @@ def validate(uString : String) = {
   reporter.validate(uString)
   validatePNs(uString)
   validatePlaces(uString)
-
+  scholionMarkers(uString)
 }
 
 
