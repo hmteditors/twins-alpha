@@ -2,7 +2,7 @@ import edu.holycross.shot.mid.validator._
 import edu.holycross.shot.cite._
 import edu.holycross.shot.ohco2._
 import edu.holycross.shot.cex._
-import scala.io.Source
+//import scala.io.Source
 import java.io.PrintWriter
 
 import org.homermultitext.edmodel._
@@ -39,7 +39,6 @@ def orthoForString(orthoName: String): MidOrthography = {
   }
 }
 
-
 def readerMappings(csvSource : String = "editions/readers.csv") = {
   // drop header row:
   val csvRows = scala.io.Source.fromFile(csvSource).getLines.toVector.tail
@@ -64,14 +63,102 @@ val repo = EditorsRepo(".")
 val midValidator = Validator(repo, readerMappings(), orthoMappings())
 val reporter = ValidationReporter(midValidator)
 
+
+// Map of scholia to Iliad lines
+def indexComments = {
+  val scholia = TextRepositorySource.fromFiles("editions/catalog-scholia-only.cex", "editions/citation-scholia-full.cex", "editions/scholia").corpus
+  val xreff = scholia.nodes.filter(_.urn.passageComponent.contains("ref"))
+
+  val urnMap = for(ref <- xreff) yield {
+    val scholion = ref.urn.collapsePassageBy(1)
+    try {
+      val iliadString = XML.loadString(ref.text).text.trim
+      val iliad = CtsUrn(iliadString)
+      Some(scholion -> iliad.dropVersion)
+    } catch {
+      case t : Throwable => {
+        println("FAILED ON REF " + ref)
+        println("SCHOLION WAS " + scholion)
+        println("Iliad was " + XML.loadString(ref.text).text.trim)
+        None
+      }
+    }
+  }
+  urnMap.flatten.toMap
+  // xreff(0).urn.collapsePassageBy(1)
+
+}
+
+// Map of Iliad lines to pages of VA MS.
+def vaIliadIndex = {
+  val vaLines = scala.io.Source.fromFile("scripts/va-il-lines-idx.txt").getLines.toVector
+  val vaIdx = for (ln <- vaLines) yield {
+    val cols = ln.split("#")
+    CtsUrn(cols(0)).dropVersion -> Cite2Urn(cols(1))
+  }
+  vaIdx.toMap
+}
+
+
+//
+def vaPageMd(pg: Cite2Urn) : String = {
+  val baseUrl = "https://homermultitext.github.io/facsimiles/venetus-a/"
+  val link = s"${baseUrl}${pg.objectComponent}/"
+  s"[${pg.objectComponent}](${link})"
+}
+
+def xrefMd(urns: Vector[String],
+  lnsIndex : Map[CtsUrn,CtsUrn],
+  pgIndex: Map[CtsUrn,Cite2Urn]) :  String = {
+
+  val iliadLines = urns.size match {
+      case 1 => {
+
+        try {
+          val u = CtsUrn(urns(0))
+          "Commenting on *Iliad*" + lnsIndex(u).passageComponent
+          
+        } catch {
+          case t: Throwable => {
+
+            "Commenting on *Iliad*" + urns(0)
+          }
+        }
+
+      }
+      case 2 => {
+        val lines = Set(lnsIndex(CtsUrn(urns(0))), lnsIndex(CtsUrn(urns(1))))
+        lines.size match {
+          case 1 => {
+            val scholUrn = CtsUrn(urns(0))
+            val ilUrn = lnsIndex(scholUrn)
+            val vaPage = pgIndex(ilUrn)
+
+            "Commenting on *Iliad*" + ilUrn.passageComponent + s" (see Venetus A, page ${vaPageMd(vaPage)})"
+          }
+
+          case 2 => {
+            "Commenting on *Iliad* " + lines.toVector.mkString(" and ")
+          }
+        }
+      }
+    }
+
+    iliadLines.toString
+}
+
 // Unspeakable kludge of a script, but the output is pretty.
 def twinScholia(e3String: String, msBString: String) = {
-  println("Making comparison of two pages...")
+  println("==>Making comparison of two pages...")
 
+  val linesIndex = indexComments
+  val vaPageIndex = vaIliadIndex
 
   val msBurn = Cite2Urn(msBString)
   val msBcorpus = reporter.corpusForPage(msBurn)
   val msBurns = msBcorpus.nodes.map(_.urn)
+
+
 
   val e3urn = Cite2Urn(e3String)
   val e3corpus = reporter.corpusForPage(e3urn)
@@ -84,53 +171,76 @@ def twinScholia(e3String: String, msBString: String) = {
   val fName = e3urn.collection + "-" + e3urn.objectComponent + "-" + msBurn.collection+ "-" + msBurn.objectComponent + ".md"
   val outFile = baseDir/fName
 
-  val pairings=  DataCollector.compositeFiles("relations", "cex", 1).split("\n").filter(_.nonEmpty)
 
+
+  val pairings=  DataCollector.compositeFiles("relations", "cex", 1).split("\n").filter(_.nonEmpty)
 
 
   val rows = for (pr <- pairings) yield {
     val urns = pr.split("#").toVector
 
     val e3Str = if (urns(0).isEmpty) {
-      ""
-    } else {
-      val scholion = CtsUrn(urns(0))
-      if (e3urns.contains(scholion)) {
-        e3DseReporter.passageMarkdown(scholion)
-      } else { "" }
+        ""
+      } else {
 
-    }
+        val scholion = CtsUrn(urns(0))
+        if (e3urns.contains(scholion)) {
+          e3DseReporter.passageMarkdown(scholion)
+        } else {
+          ""
+        }
+
+      }
     val msB = if (urns.size == 1) {
-
       ""
     } else {
+
       val scholion = CtsUrn(urns(1))
       if (msBurns.contains(scholion)) {
         msBDseReporter.passageMarkdown(scholion)
-      } else { "" }
-
+      } else {
+        ""
+      }
     }
+
+
+
     if ((msB + e3Str).isEmpty) {
       ""
     } else {
-      "| " + e3Str + " | " + msB + " |"
+
+      val seeAlso =  xrefMd(urns,linesIndex, vaPageIndex )
+
+
+      "| " + e3Str + " | " + msB + " | " + seeAlso + " |"
     }
   }
-  val hdr = "| Upsilon 1.1 | Venetus B |\n|:-----------|:-----------|\n"
+  val hdr = "| Upsilon 1.1 | Venetus B | See also |\n|:-----------|:-----------|:-----------|\n"
   val md = hdr + rows.filter(_.nonEmpty).mkString("\n")
-  //new PrintWriter("parallel-scholia.md"){write(md);close;}
+
   outFile.overwrite(md)
 }
 
-  def namesAuthority :  Map[Cite2Urn, String]= {
-    val lines = scala.io.Source.fromURL("https://raw.githubusercontent.com/homermultitext/hmt-authlists/master/data/hmtnames.cex").getLines.toVector.drop(2)
+def namesAuthority :  Map[Cite2Urn, String]= {
+val lines = scala.io.Source.fromURL("https://raw.githubusercontent.com/homermultitext/hmt-authlists/master/data/hmtnames.cex").getLines.toVector.drop(2)
 
-    val auths = for (ln <- lines) yield {
-      val cols = ln.split("#")
-      (Cite2Urn(cols(0)) -> cols(3))
-    }
-    auths.toMap
+val auths = for (ln <- lines) yield {
+  val cols = ln.split("#")
+  (Cite2Urn(cols(0)) -> cols(3))
+}
+auths.toMap
+}
+
+
+def placesAuthority :  Map[Cite2Urn, String]= {
+  val lines = scala.io.Source.fromURL("https://raw.githubusercontent.com/homermultitext/hmt-authlists/master/data/hmtplaces.cex").getLines.toVector.drop(2)
+
+  val auths = for (ln <- lines) yield {
+    val cols = ln.split("#")
+    (Cite2Urn(cols(0)) -> cols(1))
   }
+  auths.toMap
+}
 
 def validatePNs(uString: String) = {
   val pg = Cite2Urn(uString)
@@ -138,7 +248,7 @@ def validatePNs(uString: String) = {
   val corpus = reporter.corpusForPage(pg)
   //println("SIZE OF CORPUS: " + corpus.size + " NODEs.")
   val rept = StringBuilder.newBuilder
-  rept.append("# Named entity verification: " + pg + "\n\n")
+  rept.append("# Named entity verification for people: " + pg + "\n\n")
   val allPeople = for (nd <- corpus.nodes) yield {
     val n = XML.loadString(nd.text)
     val settings = TokenSettings(nd.urn, LexicalToken)
@@ -168,7 +278,7 @@ def validatePNs(uString: String) = {
   rept.append("## Verification\n\n")
   for (u <- persUrns.distinct) {
     //println(s"${u} ${persAuth(u)}")
-    rept.append(s"### ${persAuth(u)} == ${u} \n\n")
+    rept.append(s"### ${persAuth(u)} (*${u.objectComponent}*) \n\n")
     val matches = peopleList.filter(_.lexicalDisambiguation == u)
     for (tkn <- matches) {
       rept.append("-  " + tkn.editionUrn + " " + tkn.leidenDiplomatic + "\n")
@@ -184,9 +294,65 @@ def validatePNs(uString: String) = {
   outFile.overwrite(rept.toString)
 }
 
+//rept.append(s"### ${placeAuth(u)} (*${u.objectComponent}*) \n\n")
+def validatePlaces(uString: String) = {
+  val pg = Cite2Urn(uString)
+  val rept = StringBuilder.newBuilder
+  rept.append("# Named entity verification for places: " + pg + "\n\n")
+
+  val corpus = reporter.corpusForPage(pg)
+  val allPlaces = for (nd <- corpus.nodes) yield {
+    val n = XML.loadString(nd.text)
+    val settings = TokenSettings(nd.urn, LexicalToken)
+    val tokens = TeiReader.collectTokens(n, settings)
+    val places = tokens.filter(_.lexicalDisambiguation ~~ Cite2Urn("urn:cite2:hmt:place:"))
+    places
+  }
+  val placeList = allPlaces.flatten
+  val placeUrns = placeList.map(_.lexicalDisambiguation)
+  println(placeList.size + " Place tokens ")
+  val placeAuth = placesAuthority
+  //val placeUrns = placeList.map(_.lexicalDisambiguation)
+
+  val ok = placeUrns.filter(placeUrns.contains(_))
+  if (ok.size != placeUrns.size) {
+    rept.append("## Errors\n\n")
+    rept.append("There were errors in place name identifiers.\n\n")
+    val badList = placeUrns.filterNot(placeUrns.contains(_))
+    for (bad <- badList) {
+      rept.append("-  " + bad + " not found in authority list.\n")
+    }
+    rept.append("\n")
+
+  } else {
+    rept.append("All place name identifiers were found in authority list.\n\n")
+  }
+
+  rept.append("## Verification\n\n")
+  for (u <- placeUrns.distinct) {
+    //println(s"${u} ${persAuth(u)}")
+    rept.append(s"### ${placeAuth(u)} (*${u.objectComponent}*) \n\n")
+    val matches = placeList.filter(_.lexicalDisambiguation == u)
+    for (tkn <- matches) {
+      rept.append("-  " + tkn.editionUrn + " " + tkn.leidenDiplomatic + "\n")
+      //println("\t" + tkn.editionUrn + " " + tkn.leidenDiplomatic)
+    }
+    rept.append("\n\n")
+  }
+
+  val baseDir = File(s"validation/${pg.collection}-${pg.objectComponent}")
+  //val fName = e3urn.collection + "-" + e3urn.objectComponent + "-" + msBurn.collection+ "-" + msBurn.objectComponent + ".md"
+  val reptName = "place-names.md"
+  val outFile = baseDir/reptName
+  outFile.overwrite(rept.toString)
+}
+
+
 def validate(uString : String) = {
   reporter.validate(uString)
   validatePNs(uString)
+  validatePlaces(uString)
+
 }
 
 
