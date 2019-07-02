@@ -18,6 +18,7 @@ The following characters are used to encode punctuation:
 -   high stop = `-` (hyphen)
 -   "end-of-scholion/unit" marker:  `⁑` (Unicode U+2015)
 -   "large unit divider":  `‡` (Unicode U+2021)
+-  "double grave accent":
 
 
 ### Numeric characters
@@ -38,10 +39,5 @@ In addition to the classical alphabet characters used for numeric values in the 
 Our manuscripts sometimes create combinations of accents, breathings and other marks that we do not encounter in modern typeset Greek, and that cannot be encoded with Unicode characters.  In those cases where you may need to add an additional diacritic character, use the following encodings:
 
 -   "floating" acute accent =  `/`
--   "floating" grave accent =  `\`
+-   "floating" grave accent =  '｀'  (Unicode UFF40)
 -   "floating" diaeresis =  `+`
-
-
-
-
-**EXAMPLES TBA**
