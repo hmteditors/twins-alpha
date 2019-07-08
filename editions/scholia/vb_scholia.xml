@@ -2598,13 +2598,13 @@
                               <p>urn:cts:greekLit:tlg0012.tlg001.msB:9.383</p>
                           </div>
                           <div n="comment">
-                              <p>οὐ τὸ πλάτος τῶν πυλῶν θέλει σημήνειν~ οὐδὲ γὰρ ἅμα πάντας ἐξιέναι φησὶ, ἀλλὰ τὸ μέγεθος τῆς πόλεως καὶ τὸ πλῆθος τῶν ἀνδρῶν~
-                              εἴ γε πύλος μὲν ἑκατὸν ἔχει~ ἄνδρας δὲ ἁρματοφόρους <num value="700">ψ</num> μυρίαδας~ ἐν ταύτῃ δὲ ἦν πρότερον τὸ βασίλεα τῆς <placeName n="urn:cite2:hmt:place.v1:place25">Αἱγύπτου</placeName>~
-                              εἰς ἃ πολλοὺς ἔφερον φόρους~ <rs type="ethnic" n="urn:cite2:hmt:place.v1:place23">Λίβουες</rs>~ <rs type="ethnic" n="urn:cite2:hmt:place.v1:place25">Αἰγύπτιοι</rs>,
+                              <p>οὐ τὸ πλάτος τῶν πυλῶν θέλει σημαίνειν~ οὐδὲ γὰρ ἅμα πάντας ἐξιέναι φησὶ, ἀλλὰ τὸ μέγεθος τῆς πόλεως καὶ τὸ πλῆθος τῶν ἀνδρῶν~
+                              εἴ γε πύλος μὲν ἑκατὸν ἔχει~ ἄνδρας δὲ ἁρματοφόρους <num value="700">ψ</num> μυρίαδας~ ἐν ταύτῃ δὲ ἦν πρότερον τὰ βασίλεια τῆς <placeName n="urn:cite2:hmt:place.v1:place25">Αἱγύπτου</placeName>~
+                              εἰς ἃ πολλοὺς ἔφερον φόρους~ <rs type="ethnic" n="urn:cite2:hmt:place.v1:place23">Λίβυες</rs>~ <rs type="ethnic" n="urn:cite2:hmt:place.v1:place25">Αἰγύπτιοι</rs>,
                               <rs type="ethnic" n="urn:cite2:hmt:place.v1:place46">Αἰθίοπτες</rs>~ νῦν δὲ <placeName n="urn:cite2:hmt:place.v1:place64">Διόσπολις</placeName> ὀνομάζεται~ εἶχε δὲ
-                              κώμας μὲν τρισμυρίας <num value="30000">γλ</num>~ ἀρούρας δὲ <num value="700000">γψ</num>~ καὶ πύλας <num value="100">ρ</num>~ ἀνδρῶν δὲ μυριάδες <num value="700">ψ</num>~
-                              ταύτην ἐτείχισεν ὁ βασιλεὺς Ὄσιρις~ ἐξ ἑκάστης δὲ πύλης ἐστράτευον~ ὁπλῖται μὲν μύριοι~ ἱππῆες δὲ χίλιοι~ ἁρματηλάται δὲ διακόσιοι~ Θήβη δὲ ὠνόμαστο ὑπὸ <rs type="ethnic" n="urn:cite2:hmt:place.v1:place3">Ἑλλήνων</rs>, ὑπὸ δὲ
-                              <rs type="ethnic" n="urn:cite2:hmt:place.v1:place111">Περσῶν</rs> ὕστερον ἐπορθήθη⁑</p>
+                              κώμας μὲν τρισμυρίας <num value="3030">γ,λ</num>~ ἀρούρας δὲ <num value="3700">γ,ψ</num>~ καὶ πύλας <num value="100">ρ</num>~ ἀνδρῶν δὲ μυριάδες <num value="700">ψ</num>~
+                              ταύτην ἐτείχισεν ὁ βασιλεὺς <persName n="urn:cite2:hmt:pers.v1:pers1297">Ὄσιρις</persName>~ ἐξ ἑκάστης δὲ πύλης ἐστράτευον~ ὁπλῖται μὲν μύριοι~ ἱππῆες δὲ χίλιοι~ ἁρματηλάται δὲ διακόσιοι~ <placeName n="urn:cite2:hmt:place.v1:place64">Θήβη</placeName>
+                              δὲ ὠνόμαστο ὑπὸ <rs type="ethnic" n="urn:cite2:hmt:place.v1:place3">Ἑλλήνων</rs>, ὑπὸ δὲ <rs type="ethnic" n="urn:cite2:hmt:place.v1:place111">Περσῶν</rs> ὕστερον ἐπορθήθη⁑</p>
                           </div>
                       </div>
                       <div n="msB_122v_2" type="scholion">
@@ -2649,7 +2649,7 @@
                           </div>
                           <div n="comment">
                               <p>μεγίστῃ χρήται τῇ ὑπερβολῇ~ δύο δὲ οἶδεν ἀρετὰς γυναικός~ κάλλος καὶ ἔργα φρονήσεως~ ἀνδρὸς δὲ~
-                              <cit><ref type="urn">urn:cts:greekLit:tlg0012.tlg001:9.443</ref><q>μύθον τὲ ῥητῆρα, πρηκτῆρα τὲ ἔργων</q></cit>⁑</p>
+                              <cit><ref type="urn">urn:cts:greekLit:tlg0012.tlg001:9.443</ref><q>μύθων τὲ ῥητῆρα, πρηκτῆρα τὲ ἔργων</q></cit>⁑</p>
                           </div>
                       </div>
                       <div n="msB_122v_6" type="scholion">
@@ -2660,7 +2660,7 @@
                               <p>urn:cts:greekLit:tlg0012.tlg001.msB:9.392</p>
                           </div>
                           <div n="comment">
-                              <p>ὅστις ἄξιος φησὶ αὐτοῦ ἐστί~ καὶ ὅςτις ἐμοῦ ἢ πάντων <choice><abbr>ἀνώ</abbr><expan>ἀνθρώπων</expan></choice> βασιλεύτατός ἐστι~
+                              <p>ὅστις ἄξιος φησὶ αὐτοῦ ἐστί~ καὶ ὅςτις ἐμοῦ ἢ πάντων <choice><abbr>ἀνών</abbr><expan>ἀνθρώπων</expan></choice> βασιλεύτατός ἐστι~
                               λέγει γὰρ <cit><ref type="urn">urn:cts:greekLit:tlg0012.tlg001:9.160</ref><q>καί μοι ὑποστήτω ὅσον βασιλεύτερός εἰμι</q></cit>~
                               διδάσκει δὲ ὡς οὐδὲν ὀνίνησι τυραννὶς, ἐπὶ γνώμῃ ἀδίκῳ⁑</p>
                           </div>
@@ -2696,7 +2696,7 @@
                               <p>urn:cts:greekLit:tlg0012.tlg001.msB:9.397</p>
                           </div>
                           <div n="comment">
-                              <p>τοῦτο φησὶ ὡς πολλῶν ἐπιδικασομένων γαμβρεύσειν αὐτῷ δὶα τὴν ἀρετήν⁑</p>
+                              <p>τοῦτο φησὶ ὡς πολλῶν ἐπιδικασομένων γαμβρεύσειν αὐτῷ διὰ τὴν ἀρετήν⁑</p>
                           </div>
                       </div>
                       <div n="msB_122v_10" type="scholion">
@@ -2735,7 +2735,7 @@
                           </div>
                           <div n="comment">
                               <p>ἐμφαίνει τί τοῖς παροῦσιν, εἴ γε δώρων προήσεται τὴν ψυχὴν~ αὐτῶν δῶρα διδόντων ὑπὲρ <choice><abbr>σρίας</abbr><expan>σωτηρίας</expan></choice>
-                              τῆς ψυχῆς ἑαυτῶν~ καὶ ὅτι πρώην κατεφρόνει ἀυτῆς,ἀχαρίστῳ χαριζόμενος ἀνδρί~ ὅτι δὲ οὐ φιλοψυχεῖ, πρὸς τὴν <choice><abbr>μρά</abbr><expan>μητέρα</expan></choice>
+                              τῆς ψυχῆς ἑαυτῶν~ καὶ ὅτι πρώην κατεφρόνει ἀυτῆς, ἀχαρίστῳ χαριζόμενος ἀνδρί~ ὅτι δὲ οὐ φιλοψυχεῖ, πρὸς τὴν <choice><abbr>μρά</abbr><expan>μητέρα</expan></choice>
                               φησὶ <cit><ref type="urn">urn:cts:greekLit:tlg0012.tlg001:18.98</ref><q>αὐτίκα τεθναίην</q></cit>⁑</p>
                           </div>
                       </div>
