@@ -298,7 +298,8 @@ def vaPageMd(pg: Cite2Urn) : String = {
 
 
 // Markdown for cross reference in twinsScholia output to Venetus A
-def xrefMd(urns: Vector[String],
+def xrefMd(
+  urns: Vector[String],
   lnsIndex : Map[CtsUrn,CtsUrn],
   pgIndex: Map[CtsUrn,Cite2Urn]) :  String = {
 
@@ -323,9 +324,13 @@ def xrefMd(urns: Vector[String],
           case 1 => {
             val scholUrn = CtsUrn(urns(0))
             val ilUrn = lnsIndex(scholUrn)
-            val vaPage = pgIndex(ilUrn)
-
-            "Commenting on *Iliad*" + ilUrn.passageComponent + s" (see Venetus A, page ${vaPageMd(vaPage)})"
+            val vaPage = try {
+              val pg = pgIndex(ilUrn)
+              s" (see Venetus A, page ${vaPageMd(pg)})"
+            } catch {
+              case t: Throwable =>   ""
+            }
+            "Commenting on *Iliad*" + ilUrn.passageComponent + vaPage
           }
 
           case 2 => {
